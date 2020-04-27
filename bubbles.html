@@ -63,6 +63,7 @@
             .style("position", "absolute")
             .style("left", 0 + "px")
 
+
         // Three function that change the tooltip when user hover / move / leave a cell
         var mouseover = function(d) {
             Tooltip
@@ -70,7 +71,7 @@
         }
         var mousemove = function(d) {
             Tooltip
-            .html("presented by <br>" + '<u>' + d.key + '</u>' + "<br>" + d.subregion)
+            .html("<br>" + '<u>' + d.key + '</u>' + "<br>" + d.subregion)
                 .style("left", (d3.mouse(this)[0]+20) + "px")
                 .style("top", (d3.mouse(this)[1]) + "px")
         }
